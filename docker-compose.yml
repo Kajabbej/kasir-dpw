@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  sikasir-landing:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sikasir_landing_production
+    ports:
+      - "8080:8080"
+    restart: always
+    environment:
+      - NODE_ENV=production
+    # Container resources limits (production best practice)
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+        reservations:
+          cpus: '0.1'
+          memory: 64M

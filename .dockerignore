@@ -1,0 +1,33 @@
+# Version Control
+.git/
+.gitignore
+
+# Docker configuration files
+Dockerfile
+.dockerignore
+nginx.conf
+docker-compose.yml
+*kubernetes*
+*helm*
+
+# Node / Build directories & caches
+node_modules/
+package-lock.json
+npm-debug.log*
+.npm/
+.parcel-cache/
+dist/
+build/
+.next/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+
+# Documentation & Guidelines
+*.md
+walkthrough.md
+task.md
+implementation_plan.md
