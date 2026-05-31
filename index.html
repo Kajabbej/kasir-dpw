@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SiKasir — Sistem Informasi Kasir & Manajemen Perpustakaan Modern</title>
+  <meta name="description" content="Platform all-in-one sirkulasi buku, denda otomatis, point of sale (POS) kasir perpustakaan, kartu virtual, dan modul analitik bulanan visual terintegrasi.">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Liquid Aurora Background -->
+  <div class="aurora-bg">
+    <div class="aurora-glow glow-1"></div>
+    <div class="aurora-glow glow-2"></div>
+    <div class="aurora-glow glow-3"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="#" class="logo">
+        <i data-lucide="book-marked"></i>
+        <span>SiKasir</span>
+      </a>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#fitur">Fitur Utama</a></li>
+          <li><a href="#demo">Demo Interaktif</a></li>
+          <li><a href="#analisis">Analisis Penjualan</a></li>
+          <li><a href="#harga">Harga & ROI</a></li>
+        </ul>
+      </nav>
+      
+      <div style="display: flex; gap: 12px; align-items: center;">
+        <a href="#demo" class="btn-cta btn-primary">
+          <span>Uji Coba Demo</span>
+          <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+        </a>
+        <button class="menu-btn" aria-label="Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container reveal-on-scroll active">
+      <span class="hero-badge">
+        <i data-lucide="sparkles" style="width: 14px; height: 14px;"></i>
+        Platform Perpustakaan All-in-One #1 di Indonesia
+      </span>
+      <h1 class="text-gradient">Era Baru Manajemen<br>Perpustakaan Pintar</h1>
+      <p class="hero-desc">
+        Revolusi sirkulasi buku, otomatisasi denda keterlambatan, kasir POS terpadu, dan analisis intelijen bisnis bulanan dalam satu dasbor kaca premium yang menawan.
+      </p>
+      
+      <div class="hero-actions">
+        <a href="#demo" class="btn-cta btn-primary">
+          <i data-lucide="play-circle" style="width: 18px; height: 18px;"></i>
+          Mulai Demo Interaktif
+        </a>
+        <a href="#fitur" class="btn-cta btn-secondary">Pelajari Fitur</a>
+      </div>
+      
+      <!-- VISUALIZER 1: Interactive Live Dashboard Mockup -->
+      <div class="mockup-wrapper">
+        <div class="dashboard-mockup glass-panel">
+          <!-- Mockup Window Header -->
+          <div class="window-header">
+            <div class="window-dots">
+              <span class="window-dot dot-red"></span>
+              <span class="window-dot dot-yellow"></span>
+              <span class="window-dot dot-green"></span>
+            </div>
+            
+            <div class="window-title">
+              <i data-lucide="layout-dashboard" style="width: 14px; height: 14px; color: var(--primary);"></i>
+              DASBOR UTAMA — SIKASIR
+            </div>
+            
+            <div class="mockup-tabs">
+              <button class="mockup-tab active" data-tab="ringkasan">
+                <i data-lucide="bar-chart-2"></i> Ringkasan
+              </button>
+              <button class="mockup-tab" data-tab="sirkulasi">
+                <i data-lucide="refresh-cw"></i> Sirkulasi
+              </button>
+              <button class="mockup-tab" data-tab="reservasi">
+                <i data-lucide="calendar"></i> Antrian
+              </button>
+            </div>
+          </div>
+          
+          <!-- Mockup Window Body -->
+          <div class="mockup-body">
+            
+            <!-- PANEL 1: Ringkasan -->
+            <div class="mockup-panel active" id="ringkasan-panel">
+              <div class="panel-grid">
+                <div class="panel-card">
+                  <h4><i data-lucide="arrow-up-right"></i> Peminjaman Hari Ini</h4>
+                  <div class="stat-val">42 Buku</div>
+                  <span class="trend-val trend-up"><i data-lucide="trending-up"></i> +12% vs Kemarin</span>
+                </div>
+                <div class="panel-card">
+                  <h4><i data-lucide="arrow-down-left"></i> Pengembalian Hari Ini</h4>
+                  <div class="stat-val">28 Buku</div>
+                  <span class="trend-val trend-up"><i data-lucide="check"></i> 92% Tepat Waktu</span>
+                </div>
+                <div class="panel-card">
+                  <h4><i data-lucide="credit-card"></i> Pendapatan POS Harian</h4>
+                  <div class="stat-val">Rp 450.000</div>
+                  <span class="trend-val trend-up"><i data-lucide="trending-up"></i> +8.5% MoM</span>
+                </div>
+                <div class="panel-card">
+                  <h4><i data-lucide="alert-triangle"></i> Buku Terlambat (Overdue)</h4>
+                  <div class="stat-val" style="color: #ef4444;">7 Anggota</div>
+                  <span class="trend-val trend-down"><i data-lucide="bell"></i> WhatsApp Link H-1 Terkirim</span>
+                </div>
+              </div>
+              
+              <div class="mockup-chart-box">
+                <div class="mockup-chart-header">
+                  <h3>Grafik Tren Transaksi (7 Hari Terakhir)</h3>
+                  <div class="mockup-chart-legend">
+                    <div class="legend-item"><span class="legend-color" style="background: var(--primary);"></span> Peminjaman</div>
+                    <div class="legend-item"><span class="legend-color" style="background: var(--secondary);"></span> Pengembalian</div>
+                  </div>
+                </div>
+                <!-- Pure SVG Interactive Mini Line Chart -->
+                <svg class="chart-svg" viewBox="0 0 600 150">
+                  <path d="M 0 130 L 100 110 L 200 120 L 300 80 L 400 90 L 500 50 L 600 30" fill="none" stroke="var(--primary)" stroke-width="3" />
+                  <path d="M 0 140 L 100 135 L 200 125 L 300 110 L 400 115 L 500 90 L 600 70" fill="none" stroke="var(--secondary)" stroke-width="3" />
+                  <circle cx="300" cy="80" r="5" fill="var(--primary)" />
+                  <circle cx="500" cy="50" r="5" fill="var(--primary)" />
+                </svg>
+              </div>
+            </div>
+            
+            <!-- PANEL 2: Sirkulasi -->
+            <div class="mockup-panel" id="sirkulasi-panel">
+              <div class="panel-card" style="margin-bottom: 20px; text-align: left;">
+                <h4 style="font-size: 1rem; color: var(--text-primary);"><i data-lucide="refresh-cw"></i> Log Peminjaman Aktif Terkini</h4>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 12px;">Validasi keanggotaan & denda otomatis terintegrasi.</p>
+                <div style="overflow-x: auto;">
+                  <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; text-align: left;">
+                    <thead>
+                      <tr style="border-bottom: 1px solid var(--border-glow); color: var(--text-muted);">
+                        <th style="padding: 10px;">ID Transaksi</th>
+                        <th style="padding: 10px;">Anggota</th>
+                        <th style="padding: 10px;">Buku</th>
+                        <th style="padding: 10px;">Jatuh Tempo</th>
+                        <th style="padding: 10px;">Status denda</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr style="border-bottom: 1px solid rgba(255,255,255,0.03);">
+                        <td style="padding: 10px; font-weight: 600;">TX-2026-904</td>
+                        <td style="padding: 10px;">Aria Wijaya (Mhs)</td>
+                        <td style="padding: 10px;">Laskar Pelangi</td>
+                        <td style="padding: 10px;">05 Juni 2026</td>
+                        <td style="padding: 10px; color: var(--primary);"><span style="background: hsla(150, 84%, 43%, 0.1); padding: 2px 8px; border-radius: 20px;">Tepat Waktu</span></td>
+                      </tr>
+                      <tr style="border-bottom: 1px solid rgba(255,255,255,0.03);">
+                        <td style="padding: 10px; font-weight: 600;">TX-2026-901</td>
+                        <td style="padding: 10px;">Rian Syah (Umum)</td>
+                        <td style="padding: 10px;">Bumi Manusia</td>
+                        <td style="padding: 10px;">28 Mei 2026</td>
+                        <td style="padding: 10px; color: #ef4444;"><span style="background: rgba(239, 68, 68, 0.1); padding: 2px 8px; border-radius: 20px;">Terlambat +Rp15.000</span></td>
+                      </tr>
+                      <tr style="border-bottom: 1px solid rgba(255,255,255,0.03);">
+                        <td style="padding: 10px; font-weight: 600;">TX-2026-885</td>
+                        <td style="padding: 10px;">Prof. Budi (Dosen)</td>
+                        <td style="padding: 10px;">Fisika Modern</td>
+                        <td style="padding: 10px;">12 Juni 2026</td>
+                        <td style="padding: 10px; color: var(--primary);"><span style="background: hsla(150, 84%, 43%, 0.1); padding: 2px 8px; border-radius: 20px;">Tepat Waktu</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div style="display: flex; gap: 12px;">
+                <button class="btn-cta btn-primary" style="padding: 8px 16px; font-size: 0.8rem;"><i data-lucide="plus"></i> Pinjam Buku Baru</button>
+                <button class="btn-cta btn-secondary" style="padding: 8px 16px; font-size: 0.8rem;"><i data-lucide="corner-down-left"></i> Pengembalian Slip</button>
+              </div>
+            </div>
+            
+            <!-- PANEL 3: Reservasi -->
+            <div class="mockup-panel" id="reservasi-panel">
+              <div class="panel-grid">
+                <div class="panel-card">
+                  <h4><i data-lucide="users"></i> Antrean FIFO Terpanjang</h4>
+                  <div class="stat-val">3 Antrean</div>
+                  <span class="trend-val trend-up"><i data-lucide="book"></i> Buku: Bumi Manusia</span>
+                </div>
+                <div class="panel-card">
+                  <h4><i data-lucide="clock"></i> Waktu Klaim Rata-rata</h4>
+                  <div class="stat-val">4.5 Jam</div>
+                  <span class="trend-val" style="color: var(--text-muted);"><i data-lucide="settings"></i> Batas Default: 24 Jam</span>
+                </div>
+              </div>
+              <div class="panel-card" style="text-align: left;">
+                <h4 style="font-size: 1rem; color: var(--text-primary);"><i data-lucide="arrow-right-left"></i> Antrean Reservasi Buku Terpopuler</h4>
+                <div style="overflow-x: auto; margin-top: 10px;">
+                  <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; text-align: left;">
+                    <thead>
+                      <tr style="border-bottom: 1px solid var(--border-glow); color: var(--text-muted);">
+                        <th style="padding: 8px;">Buku</th>
+                        <th style="padding: 8px;">Pemohon Aktif</th>
+                        <th style="padding: 8px;">Posisi Antrean</th>
+                        <th style="padding: 8px;">Notifikasi WA</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr style="border-bottom: 1px solid rgba(255,255,255,0.03);">
+                        <td style="padding: 8px; font-weight: 600;">Bumi Manusia</td>
+                        <td style="padding: 8px;">Nadia Putri</td>
+                        <td style="padding: 8px;">#1 (Menunggu Buku)</td>
+                        <td style="padding: 8px; color: var(--text-muted);">Menunggu Retur</td>
+                      </tr>
+                      <tr style="border-bottom: 1px solid rgba(255,255,255,0.03);">
+                        <td style="padding: 8px; font-weight: 600;">Laskar Pelangi</td>
+                        <td style="padding: 8px;">Dani Ahmad</td>
+                        <td style="padding: 8px; color: var(--secondary);">Ready to Pickup</td>
+                        <td style="padding: 8px; color: var(--secondary);"><span style="background: hsla(174, 90%, 41%, 0.1); padding: 2px 8px; border-radius: 20px;"><i data-lucide="message-square" style="width: 12px; height: 12px; display: inline; vertical-align: middle; margin-right: 4px;"></i>WA Sent</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Problem & Solution Section -->
+  <section class="section-padding" style="background: rgba(0,0,0,0.2);">
+    <div class="container reveal-on-scroll">
+      <div class="section-header">
+        <h2>Metode Kuno vs. Keanggunan SiKasir</h2>
+        <p>Hentikan kebocoran denda, tumpukan kertas, dan pembukuan sirkulasi manual yang tidak akurat.</p>
+      </div>
+      
+      <div class="comparison-grid">
+        <!-- Legacy Card -->
+        <div class="comparison-card legacy glass-panel">
+          <h3>Sistem Manual / Excel</h3>
+          <ul class="comp-list">
+            <li>
+              <i data-lucide="x-circle"></i>
+              <div>
+                <strong>Pencatatan Buku Tulis Rawan Kehilangan</strong>
+                Detail peminjam seringkali terselip atau buku catatan fisik sobek/kotor.
+              </div>
+            </li>
+            <li>
+              <i data-lucide="x-circle"></i>
+              <div>
+                <strong>Kalkulasi Denda Manual Tidak Konsisten</strong>
+                Petugas menghitung hari keterlambatan manual, memakan waktu & memicu perdebatan denda.
+              </div>
+            </li>
+            <li>
+              <i data-lucide="x-circle"></i>
+              <div>
+                <strong>Kartu Anggota Kertas Gampang Hilang</strong>
+                Sulit memverifikasi masa aktif anggota tanpa mengecek arsip excel satu per satu.
+              </div>
+            </li>
+            <li>
+              <i data-lucide="x-circle"></i>
+              <div>
+                <strong>Transaksi POS Terpisah dari Kas Buku</strong>
+                Penjualan ATK/Merchandise tercatat manual terpisah dari denda, menyebabkan kebocoran omset.
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- SiKasir Card -->
+        <div class="comparison-card sikasir glass-panel">
+          <h3>Solusi Digital SiKasir</h3>
+          <ul class="comp-list">
+            <li>
+              <i data-lucide="check-circle-2"></i>
+              <div>
+                <strong>Sirkulasi Pintar Berbasis QR Code</strong>
+                Cari anggota & buku instan via kamera atau scanner. Status sirkulasi otomatis terintegrasi.
+              </div>
+            </li>
+            <li>
+              <i data-lucide="check-circle-2"></i>
+              <div>
+                <strong>Otomatisasi Denda Presisi Tinggi</strong>
+                Sistem menghitung denda harian otomatis berdasarkan konfigurasi tipe anggota. Blokir peminjaman jika denda belum lunas.
+              </div>
+            </li>
+            <li>
+              <i data-lucide="check-circle-2"></i>
+              <div>
+                <strong>Kartu Anggota Virtual Digital Terkunci</strong>
+                Akses QR code kartu unik yang dapat dicetak atau disimpan di HP untuk verifikasi super cepat.
+              </div>
+            </li>
+            <li>
+              <i data-lucide="check-circle-2"></i>
+              <div>
+                <strong>POS Kasir Toko Buku Terpadu</strong>
+                Pencatatan penjualan ATK, fotokopi, iuran, & denda otomatis melebur ke laporan keuangan real-time.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid Section -->
+  <section class="section-padding" id="fitur">
+    <div class="container reveal-on-scroll">
+      <div class="section-header">
+        <h2>Kekuatan Fitur SiKasir</h2>
+        <p>Dirancang khusus memenuhi seluruh kebutuhan operasional perpustakaan Anda secara komprehensif.</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-item glass-panel">
+          <div class="feature-icon"><i data-lucide="refresh-cw"></i></div>
+          <h3>Sirkulasi Otomatis</h3>
+          <p>Validasi peminjaman instan. Pengaturan batas buku & jatuh tempo otomatis sesuai kategori anggota.</p>
+        </div>
+        <div class="feature-item glass-panel">
+          <div class="feature-icon"><i data-lucide="dollar-sign"></i></div>
+          <h3>Kalkulator Denda</h3>
+          <p>Menghitung otomatis denda keterlambatan, buku rusak, atau hilang dengan multiplier harga buku.</p>
+        </div>
+        <div class="feature-item glass-panel">
+          <div class="feature-icon"><i data-lucide="qr-code"></i></div>
+          <h3>Kartu Anggota Virtual</h3>
+          <p>Generate nomor anggota otomatis, kartu digital bersinar dengan QR code personal siap pakai.</p>
+        </div>
+        <div class="feature-item glass-panel">
+          <div class="feature-icon"><i data-lucide="shopping-bag"></i></div>
+          <h3>Point of Sale (POS) Kasir</h3>
+          <p>Katalog produk non-pinjam, keranjang belanja diskon, kalkulator kembalian, dan cetak struk.</p>
+        </div>
+        <div class="feature-item glass-panel">
+          <div class="feature-icon"><i data-lucide="message-square"></i></div>
+          <h3>Notifikasi WhatsApp</h3>
+          <p>Pengingat otomatis H-1 jatuh tempo lewat WhatsApp untuk menekan angka keterlambatan.</p>
+        </div>
+        <div class="feature-item glass-panel">
+          <div class="feature-icon"><i data-lucide="trending-up"></i></div>
+          <h3>Analisis Penjualan & MoM</h3>
+          <p>Agregasi harian otomatis menjadi dasbor tren pendapatan bulanan untuk menunjang keputusan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISUALIZER 2 & 3: Interactive Demo Playground -->
+  <section class="section-padding visualizer-section" id="demo" style="background: rgba(0,0,0,0.15); border-top: 1px solid var(--border-glow); border-bottom: 1px solid var(--border-glow);">
+    <div class="container reveal-on-scroll">
+      <div class="section-header">
+        <h2>Playground Demo Interaktif</h2>
+        <p>Rasakan langsung kemudahan menggunakan fitur unggulan generator kartu virtual dan kasir POS perpustakaan.</p>
+      </div>
+      
+      <!-- DEMO 1: Virtual Card Generator -->
+      <div class="visualizer-grid" style="margin-bottom: 80px;">
+        <div class="generator-form glass-panel">
+          <h3 style="font-size: 1.6rem; color: var(--text-primary); display: flex; align-items: center; gap: 8px;">
+            <i data-lucide="qr-code" style="color: var(--primary);"></i>
+            1. Pembuat Kartu Anggota Virtual
+          </h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 8px;">
+            Ketik informasi di bawah ini untuk melihat pemutakhiran kartu anggota digital secara langsung!
+          </p>
+          
+          <div class="form-group">
+            <label for="member-name-input">Nama Lengkap</label>
+            <input type="text" id="member-name-input" placeholder="Contoh: Aria Wijaya" value="Aria Wijaya">
+          </div>
+          
+          <div class="form-group">
+            <label for="member-id-input">NIM / NIP / NIK</label>
+            <input type="text" id="member-id-input" placeholder="Contoh: 10224095" value="10224095">
+          </div>
+          
+          <div class="form-group">
+            <label for="member-tier-input">Jenis Keanggotaan</label>
+            <select id="member-tier-input">
+              <option value="mahasiswa" selected>Mahasiswa (Emerald)</option>
+              <option value="dosen">Dosen (Teal)</option>
+              <option value="umum">Umum (Neon Pink)</option>
+            </select>
+          </div>
+        </div>
+        
+        <!-- Real-time Virtual Card Preview -->
+        <div class="card-container flex-center">
+          <div class="virtual-card glass-panel" id="virtual-card-preview">
+            <div class="virtual-card-header">
+              <span class="card-logo">
+                <i data-lucide="book-marked"></i>
+                SiKasir
+              </span>
+              <span class="card-tier" id="card-tier-val">MAHASISWA</span>
+            </div>
+            
+            <div class="virtual-card-body">
+              <div class="card-details">
+                <span class="card-name" id="card-name-val">ARIA WIJAYA</span>
+                <span class="card-id" id="card-id-val">10224095</span>
+              </div>
+              
+              <div class="card-qr-box">
+                <!-- Fallback to QR API -->
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=SIKASIR:mahasiswa:10224095:ARIA%20WIJAYA&color=1a202c" alt="QR Code Anggota">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- DEMO 2: POS Cashier Cart Simulator -->
+      <div class="pos-demo-box reveal-on-scroll">
+        <h3 style="font-size: 1.8rem; margin-bottom: 20px; text-align: center; display: flex; align-items: center; justify-content: center; gap: 8px;">
+          <i data-lucide="shopping-cart" style="color: var(--secondary);"></i>
+          2. Simulator Kasir POS Toko Buku
+        </h3>
+        <p style="text-align: center; color: var(--text-secondary); max-width: 600px; margin: 0 auto 40px; font-size: 0.95rem;">
+          Klik kartu produk untuk menambahkannya ke keranjang. Pilih metode pembayaran, kalkulasi diskon otomatis, dan cetak struk digital Anda!
+        </p>
+        
+        <div class="pos-grid">
+          <!-- Catalog Panel -->
+          <div class="pos-products glass-panel">
+            <div class="pos-product-header">
+              <h4 style="font-family: var(--font-sans); font-size: 1rem;"><i data-lucide="layout-grid" style="color: var(--secondary); display: inline-block; vertical-align: middle; margin-right: 4px;"></i> Katalog Produk Aktif</h4>
+              <span style="font-size: 0.75rem; color: var(--text-muted);">Sistem Pengurang Stok Otomatis</span>
+            </div>
+            <div class="pos-catalog" id="pos-catalog-grid">
+              <!-- Catalog items render in JS -->
+            </div>
+          </div>
+          
+          <!-- Checkout Panel -->
+          <div class="pos-checkout glass-panel" style="position: relative;">
+            <h4 style="font-family: var(--font-sans); font-size: 1rem; border-bottom: 1px solid var(--border-glow); padding-bottom: 8px;"><i data-lucide="shopping-bag" style="color: var(--primary); display: inline-block; vertical-align: middle; margin-right: 4px;"></i> Keranjang Belanja Kasir</h4>
+            
+            <div class="pos-cart-items" id="pos-cart-items-container">
+              <!-- Rendered in JS -->
+            </div>
+            
+            <div class="pos-bill-details">
+              <div class="pos-bill-row">
+                <span>Subtotal</span>
+                <span id="pos-subtotal">Rp 0</span>
+              </div>
+              <div class="pos-bill-row">
+                <span>Diskon Promo (Kuantitas > Rp150rb)</span>
+                <span id="pos-discount" style="color: var(--primary);">Rp 0</span>
+              </div>
+              <div class="pos-bill-row total">
+                <span>TOTAL AKHIR</span>
+                <span id="pos-total">Rp 0</span>
+              </div>
+            </div>
+            
+            <div class="pos-payment-section" style="margin-top: 8px;">
+              <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 700; display: block; margin-bottom: 6px;">METODE PEMBAYARAN</span>
+              <div class="pos-payment-methods">
+                <button class="payment-btn active" data-method="cash"><i data-lucide="banknote" style="width: 12px; height: 12px; display: inline; vertical-align: middle; margin-right: 4px;"></i> Tunai</button>
+                <button class="payment-btn" data-method="qris"><i data-lucide="qr-code" style="width: 12px; height: 12px; display: inline; vertical-align: middle; margin-right: 4px;"></i> QRIS</button>
+                <button class="payment-btn" data-method="transfer"><i data-lucide="landmark" style="width: 12px; height: 12px; display: inline; vertical-align: middle; margin-right: 4px;"></i> Transfer</button>
+              </div>
+            </div>
+            
+            <button class="btn-cta btn-primary" id="pos-checkout-btn" style="width: 100%; justify-content: center; margin-top: 10px;" disabled>
+              <i data-lucide="printer"></i>
+              Konfirmasi & Cetak Struk
+            </button>
+            
+            <!-- Glowing Receipt Thermal Modal Overlay -->
+            <div class="receipt-glowing" id="receipt-modal">
+              <pre id="receipt-text" style="font-family: monospace; font-size: 0.75rem; white-space: pre-wrap; margin-bottom: 16px;"></pre>
+              <button class="btn-cta btn-secondary" id="close-receipt-btn" style="width: 100%; justify-content: center; padding: 6px 12px; font-size: 0.75rem; background: rgba(16, 185, 129, 0.1); border-color: #10b981; color: #10b981;">
+                Tutup Struk Belanja
+              </button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- VISUALIZER 4: Business Intelligence & Analisis Penjualan Section -->
+  <section class="section-padding" id="analisis">
+    <div class="container reveal-on-scroll">
+      <div class="section-header">
+        <h2>Analisis Penjualan Bulanan</h2>
+        <p>Visualisasi tren keuangan agregatif dan analisis pergerakan proyeksi (SMA-7) sesuai standar sistem analitik PRD.</p>
+      </div>
+      
+      <div class="analytics-card glass-panel">
+        <div class="analytics-top">
+          <div class="analytics-nav">
+            <button class="btn-cta btn-secondary" id="prev-month-btn" style="padding: 6px 12px; border-radius: 8px;">
+              <i data-lucide="chevron-left" style="width: 16px; height: 16px;"></i>
+            </button>
+            <span class="analytics-month" id="analytics-month-label">MEI 2026</span>
+            <button class="btn-cta btn-secondary" id="next-month-btn" style="padding: 6px 12px; border-radius: 8px;">
+              <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i>
+            </button>
+          </div>
+          
+          <div class="mockup-chart-legend">
+            <div class="legend-item"><span class="legend-color" style="background: var(--primary);"></span> POS</div>
+            <div class="legend-item"><span class="legend-color" style="background: var(--accent-pink);"></span> Denda</div>
+            <div class="legend-item"><span class="legend-color" style="background: var(--secondary);"></span> Iuran Anggota</div>
+            <div class="legend-item"><span class="legend-color" style="background: var(--accent-orange); border: 1px dashed var(--accent-orange); height: 2px; width: 14px; border-radius: 0;"></span> Proyeksi (SMA-7)</div>
+          </div>
+        </div>
+        
+        <!-- Big Charts Board -->
+        <div class="chart-wrapper">
+          <svg class="chart-svg-main" viewBox="0 0 700 240">
+            <!-- Grid Lines -->
+            <g class="chart-grid">
+              <line x1="10" y1="40" x2="690" y2="40"></line>
+              <line x1="10" y1="90" x2="690" y2="90"></line>
+              <line x1="10" y1="140" x2="690" y2="140"></line>
+              <line x1="10" y1="190" x2="690" y2="190"></line>
+            </g>
+            
+            <!-- Dynamic SVG Paths drawing lines -->
+            <path id="svg-pos-line" class="chart-line pos" d=""></path>
+            <path id="svg-fines-line" class="chart-line fines" d=""></path>
+            <path id="svg-member-line" class="chart-line membership" d=""></path>
+            <path id="svg-proj-line" class="chart-line projection" d=""></path>
+            
+            <!-- X Axis indicators -->
+            <g font-family="var(--font-sans)" font-size="9" fill="var(--text-muted)" text-anchor="middle">
+              <text x="10" y="215">Tgl 1</text>
+              <text x="150" y="215">Tgl 8</text>
+              <text x="290" y="215">Tgl 15</text>
+              <text x="430" y="215">Tgl 22</text>
+              <text x="570" y="215">Tgl 29</text>
+              <text x="660" y="215" fill="var(--accent-orange)">Proyeksi</text>
+            </g>
+          </svg>
+        </div>
+        
+        <!-- Interactive KPIs below Chart -->
+        <div class="panel-grid" style="margin-bottom: 24px;">
+          <div class="panel-card" style="border-color: hsla(255,255,255,0.03);">
+            <h4>Total Omset Pendapatan</h4>
+            <div class="stat-val text-gradient-emerald" id="metric-total-rev">Rp 12.660.000</div>
+            <span class="trend-val trend-up" id="metric-mom"><i data-lucide="trending-up"></i> +12.4% MoM</span>
+          </div>
+          <div class="panel-card" style="border-color: hsla(255,255,255,0.03);">
+            <h4>Volume Sirkulasi Finansial</h4>
+            <div class="stat-val" id="metric-total-trans">240 Transaksi</div>
+            <span class="trend-val" style="color: var(--text-muted);"><i data-lucide="shield-check"></i> Real-time Agregasi</span>
+          </div>
+          <div class="panel-card" style="border-color: hsla(255,255,255,0.03); border-bottom: 2px solid var(--primary);">
+            <h4>Unit POS Kasir</h4>
+            <div class="stat-val" id="metric-pos-val" style="font-size: 1.4rem;">Rp 8.420.000</div>
+            <span class="trend-val" style="color: var(--text-muted);"><i data-lucide="arrow-right"></i> Buku & ATK</span>
+          </div>
+          <div class="panel-card" style="border-color: hsla(255,255,255,0.03); border-bottom: 2px solid var(--accent-pink);">
+            <h4>Unit Denda Buku</h4>
+            <div class="stat-val" id="metric-fines-val" style="font-size: 1.4rem;">Rp 1.840.000</div>
+            <span class="trend-val" style="color: var(--text-muted);"><i data-lucide="arrow-right"></i> Overdue & Rusak</span>
+          </div>
+          <div class="panel-card" style="border-color: hsla(255,255,255,0.03); border-bottom: 2px solid var(--secondary);">
+            <h4>Iuran Keanggotaan</h4>
+            <div class="stat-val" id="metric-member-val" style="font-size: 1.4rem;">Rp 2.400.000</div>
+            <span class="trend-val" style="color: var(--text-muted);"><i data-lucide="arrow-right"></i> Member Fee</span>
+          </div>
+        </div>
+        
+        <!-- Insight summary text generated in JS -->
+        <div class="insight-box">
+          <div class="insight-icon"><i data-lucide="line-chart"></i></div>
+          <div class="insight-text">
+            <h4>Ringkasan Intelijen Bisnis Perpustakaan (Auto-Generated)</h4>
+            <p id="insight-text-val"></p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing & Cost Savings Section -->
+  <section class="section-padding" id="harga" style="background: rgba(0,0,0,0.2);">
+    <div class="container reveal-on-scroll">
+      <div class="section-header">
+        <h2>Lisensi & Perhitungan ROI</h2>
+        <p>Investasi pintar untuk otomatisasi perpustakaan. Simulasikan sendiri penghematan waktu & biaya operasional Anda.</p>
+      </div>
+      
+      <!-- ROI Interactive Calculator -->
+      <div class="calculator-box glass-panel reveal-on-scroll">
+        <h3 style="font-family: var(--font-sans); font-size: 1.25rem; font-weight: 700; color: var(--text-primary);">
+          <i data-lucide="calculator" style="color: var(--primary); display: inline-block; vertical-align: middle; margin-right: 6px;"></i>
+          Kalkulator Penghematan Operasional Bulanan
+        </h3>
+        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 6px;">
+          Tentukan taksiran total transaksi sirkulasi buku (peminjaman & pengembalian) per bulan di perpustakaan Anda:
+        </p>
+        
+        <div class="calc-grid">
+          <div class="calc-slider-box">
+            <label><span>Sirkulasi/Bulan:</span> <strong id="slider-val">500</strong></label>
+            <input type="range" class="calc-slider" id="calc-slider" min="100" max="3000" step="50" value="500">
+          </div>
+          
+          <div class="calc-result">
+            <span>Estimasi Penghematan Biaya Admin:</span>
+            <br>
+            <span id="calc-savings-result">Rp 658.333</span> <small style="font-size: 0.9rem; color: var(--text-muted);">/ bulan</small>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Tier Grid -->
+      <div class="pricing-grid">
+        <!-- Tier 1 -->
+        <div class="pricing-card glass-panel">
+          <div class="pricing-header">
+            <h3>Sekolah Dasar / Menengah</h3>
+            <p>Sempurna untuk perpustakaan sekolah/madrasah.</p>
+          </div>
+          <div class="pricing-price">Rp 149.000 <span>/ bulan</span></div>
+          <ul class="pricing-features">
+            <li><i data-lucide="check"></i> Batas anggota hingga 1.000 siswa</li>
+            <li><i data-lucide="check"></i> Autocutter WhatsApp Link Reminder</li>
+            <li><i data-lucide="check"></i> Kartu Anggota Virtual siap cetak</li>
+            <li><i data-lucide="check"></i> Kasir POS penjualan ATK sederhana</li>
+            <li><i data-lucide="check"></i> Dasbor Ringkasan Finansial dasar</li>
+          </ul>
+          <a href="#demo" class="btn-cta btn-secondary" style="justify-content: center;">Pilih Lisensi</a>
+        </div>
+        
+        <!-- Tier 2 - Popular -->
+        <div class="pricing-card glass-panel popular">
+          <div class="popular-badge">Terpopuler</div>
+          <div class="pricing-header">
+            <h3>Universitas / Tinggi</h3>
+            <p>Dirancang untuk skala volume tinggi & multi-fakultas.</p>
+          </div>
+          <div class="pricing-price">Rp 299.000 <span>/ bulan</span></div>
+          <ul class="pricing-features">
+            <li><i data-lucide="check"></i> Batas anggota tanpa batas</li>
+            <li><i data-lucide="check"></i> Antrean FIFO Reservasi Buku</li>
+            <li><i data-lucide="check"></i> Integrasi Otomatisasi POS komplit</li>
+            <li><i data-lucide="check"></i> Laporan Analisis Penjualan Bulanan</li>
+            <li><i data-lucide="check"></i> WhatsApp API Integration (Fonnte/Wabiz)</li>
+            <li><i data-lucide="check"></i> Ekspor PDF & Excel laporan analitik</li>
+          </ul>
+          <a href="#demo" class="btn-cta btn-primary" style="justify-content: center;">Pilih Lisensi</a>
+        </div>
+        
+        <!-- Tier 3 -->
+        <div class="pricing-card glass-panel">
+          <div class="pricing-header">
+            <h3>Perpustakaan Umum / Wilayah</h3>
+            <p>Paket kustom dengan support integrasi lokal penuh.</p>
+          </div>
+          <div class="pricing-price">Hubungi Kami <span>/ tahun</span></div>
+          <ul class="pricing-features">
+            <li><i data-lucide="check"></i> Lisensi multi-cabang (Centralized Database)</li>
+            <li><i data-lucide="check"></i> Layanan migrasi database manual gratis</li>
+            <li><i data-lucide="check"></i> API khusus integrasi sistem akademik daerah</li>
+            <li><i data-lucide="check"></i> Support Prioritas 24/7 via WhatsApp</li>
+            <li><i data-lucide="check"></i> Sesuai Aturan Sistem Audit Keuangan</li>
+          </ul>
+          <a href="#demo" class="btn-cta btn-secondary" style="justify-content: center;">Hubungi Sales</a>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo">
+          <a href="#" class="logo" style="margin-bottom: 8px;">
+            <i data-lucide="book-marked"></i>
+            <span>SiKasir</span>
+          </a>
+          <p>Solusi digitalisasi dan kasir perpustakaan modern terpadu di Indonesia.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Facebook"><i data-lucide="facebook" style="width: 18px; height: 18px;"></i></a>
+            <a href="#" class="social-btn" aria-label="Twitter"><i data-lucide="twitter" style="width: 18px; height: 18px;"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i data-lucide="instagram" style="width: 18px; height: 18px;"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#fitur">Fitur Utama</a></li>
+            <li><a href="#demo">Demo Interaktif</a></li>
+            <li><a href="#analisis">Analisis Penjualan</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Fitur</h4>
+          <ul>
+            <li><a href="#">Sirkulasi Buku</a></li>
+            <li><a href="#">Kalkulasi Denda</a></li>
+            <li><a href="#">POS Kasir ATK</a></li>
+            <li><a href="#">Virtual Member Card</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Kontak</h4>
+          <ul>
+            <li><a href="#"><i data-lucide="mail" style="width: 14px; height: 14px; display: inline-block; vertical-align: middle; margin-right: 6px;"></i> info@sikasir.id</a></li>
+            <li><a href="#"><i data-lucide="phone" style="width: 14px; height: 14px; display: inline-block; vertical-align: middle; margin-right: 6px;"></i> +62 821-3456-7890</a></li>
+            <li><a href="#"><i data-lucide="map-pin" style="width: 14px; height: 14px; display: inline-block; vertical-align: middle; margin-right: 6px;"></i> Jakarta, Indonesia</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 SiKasir Indonesia. Hak Cipta Dilindungi Undang-Undang.</p>
+        <div style="display: flex; gap: 16px;">
+          <a href="#" style="color: var(--text-muted); text-decoration: none;">Ketentuan Layanan</a>
+          <a href="#" style="color: var(--text-muted); text-decoration: none;">Kebijakan Privasi</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App JavaScript Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
